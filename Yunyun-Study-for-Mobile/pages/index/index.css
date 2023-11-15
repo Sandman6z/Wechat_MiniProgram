@@ -1,0 +1,30 @@
+
+	/* 分类入口 */
+	.classify {
+		width: 100%;
+		background: #fff;
+	}
+	.classify-content {
+		padding: 20rpx;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	.class {
+		width: calc( (100vw - 40rpx)/ 4 );
+		height: 160rpx;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.classimage {
+		margin-top: 20rpx;
+		width: 80rpx;
+		height: 80rpx;
+		border-radius: 50%;
+		transition: opacity .5s; 
+	}
+	.class text {
+		margin-top: 10rpx;
+		font-size: 14px;
+	}

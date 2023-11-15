@@ -1,0 +1,223 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"navigationBarTitleText": "谊安在线",
+			"style": {
+				"app-plus":{
+					"titleNView":false
+				}
+			}
+		},{
+		    "path" : "pages/Mycourse/Mycourse",
+			"navigationBarTitleText": "我的课程",
+		    "style" : {
+				"app-plus":{
+					"titleNView":false
+				}
+			}
+		},{
+            "path" : "pages/center/center",
+			"navigationBarTitleText": "账号",
+            "style" : {
+				"disableScroll":true,
+				"app-plus":{
+					"titleNView":false
+				}
+			}
+        },{
+            "path" : "pages/phoneLogin/phoneLogin",
+			"navigationBarTitleText": "登录",
+            "style" : {
+				"disableScroll":true,
+            	"app-plus":{
+            		"titleNView":false
+            		}
+            }
+        },{
+		    "path" : "pages/chooseLogin/chooseLogin",
+			"navigationBarTitleText": "选择登录",
+		    "style" : {
+				"disableScroll":true,
+		    	"app-plus":{
+		    		"titleNView":false
+		    		}
+		    }
+		},{
+            "path" : "pages/search/search",
+			"navigationBarTitleText": "搜索",
+            "style" : {
+				"app-plus":{
+					"titleNView":false
+					}
+			}
+        }
+        ,{
+            "path" : "pages/classification/classification",
+			"navigationBarTitleText": "分类",
+            "style" : {
+				"app-plus":{
+					"titleNView":false
+					}
+			}
+        }
+        ,{
+            "path" : "pages/Coursedetails/Coursedetails",
+			"navigationBarTitleText": "课程详情",
+            "style" : {
+				// "enablePullDownRefresh": true,
+				"app-plus":{
+					"titleNView":false,
+					"subNVues": [{
+					    "id": "Fast_forward", // 唯一标识 
+					    "path": "pages/Coursedetails/video/subNVue/Fast_forward", // 页面路径  
+					    "type":"popup",
+						"style": { 
+							"position":"absolute",
+							"dock":"left",
+							// "height": "422rpx",
+							// "width":"422rpx",
+							"top":"20px",
+							"background":"transparent"
+							} 
+					    }]	  	
+				}
+			}
+        }
+
+        ,{
+            "path" : "pages/userEdit/userEdit",
+			"navigationBarTitleText": "我的信息",
+            "style" : {
+				"disableScroll":true,
+            	"app-plus":{
+            		"titleNView":false
+            		}
+            }
+        }
+        ,{
+            "path" : "pages/order/order",
+            "navigationBarTitleText": "我的订单",
+            "style" : {
+            	"app-plus":{
+            		"titleNView":false
+            		}
+            }
+        }
+        ,{
+            "path" : "pages/coupon/coupon",
+            "navigationBarTitleText": "我的优惠券",
+            "style" : {
+            	"app-plus":{
+            		"titleNView":false
+            		}
+            }
+        }
+        ,{
+            "path" : "pages/cart/cart",
+            "navigationBarTitleText": "我的购物车",
+            "style" : {
+            	"app-plus":{
+            		"titleNView":false
+            		}
+            }
+        }
+        ,{
+            "path" : "pages/payConfirm/payConfirm",
+            "navigationBarTitleText": "确认订单",
+            "style" : {
+            	"app-plus":{
+            		"titleNView":false
+            		}
+            }
+        }
+        ,{
+            "path" : "pages/provider/provider",
+            "navigationBarTitleText": "机构/讲师",
+            "style" : {
+            	"app-plus":{
+            		"titleNView":false
+            		}
+            }
+        }
+        ,{
+            "path" : "pages/allCourse/allCourse",
+            "navigationBarTitleText": "全部课程",
+            "style" : {
+            	"app-plus":{
+            		"titleNView":false
+            		}
+            }
+        }
+        ,{
+            "path" : "pages/register/register",
+            "navigationBarTitleText": "注册",
+            "style" : {
+				"disableScroll":true,
+            	"app-plus":{
+            		"titleNView":false
+            		}
+            }
+        }
+        ,{
+            "path" : "pages/editComment/editComment",
+			"navigationBarTitleText": "评论",
+            "style" : {
+				"app-plus":{
+					"titleNView":false
+					}
+			}
+        }
+        ,{
+            "path" : "pages/payment/payment",
+            "navigationBarTitleText": "支付",
+            "style" : {
+            	"app-plus":{
+            		"titleNView":false
+            		}
+            }
+        }
+        ,{
+            "path" : "pages/appDownload/appDownload",
+            "style" : {
+            	"app-plus":{
+            		"titleNView":false
+            		}
+            }
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "芸云课堂",
+		"navigationBarBackgroundColor": "#f7f7f7",
+		"backgroundColor": "#f7f7f7",
+		"backgroundColorTop": "#f7f7f7",
+		"backgroundColorBottom": "#f7f7f7"
+	},
+	"tabBar": {
+		"color":"#bfbfbf",
+		"selectedColor":"#515151",
+		"borderStyle":"black",
+		"backgroundColor":"#fff",
+		"list":[
+			{
+				"pagePath":"pages/index/index",
+				"text":"首页",
+				"iconPath":"static/icon/home.png",
+				"selectedIconPath":"static/icon/home-active.png"
+			},
+			{
+				"pagePath":"pages/Mycourse/Mycourse",
+				"text":"我的课程",
+				"iconPath":"static/icon/myStudy.png",
+				"selectedIconPath":"static/icon/myStudy-active.png"
+			},
+			{
+				"pagePath":"pages/center/center",
+				"text":"账号",
+				"iconPath":"static/icon/account.png",
+				"selectedIconPath":"static/icon/account-active.png"
+			}
+		]
+	}
+}

@@ -1,0 +1,185 @@
+	/* 搜索栏 */
+	.page {
+		font-size: 14px;
+		background: none;
+	}
+	.searchBar {
+		height: 68rpx;
+		background: #f6f6f6;
+		display: flex;
+		padding: 10rpx 0 10rpx 30rpx;
+		position: relative;
+	}
+	.searchBar-searchIcon {
+		position: absolute;
+		left: 50rpx;
+		top: calc( 10rpx + 68rpx / 2 - 30rpx / 2 );
+		width: 30rpx;
+		height: 30rpx;
+		background-image: url(../../static/images/searchIcon.png);
+		background-size: cover;
+	}
+	.searchBar-delIcon {
+		position: absolute;
+		left: 580rpx;
+		top: calc( 10rpx + 68rpx / 2 - 30rpx / 2 );
+		width: 30rpx;
+		height: 30rpx;
+		border-radius: 50%;
+		background: #ced1da;
+	}
+	.searchBar-delIcon::before,
+	.searchBar-delIcon::after{
+		content: '';
+		position: absolute;
+		height: 1.5px;
+		width: 18rpx;
+		top: 16rpx;
+		left: 6rpx;
+		margin-top: -1px;
+		background: #fff;
+	}
+	.searchBar-delIcon::before {
+	    transform: rotate(45deg);
+	}
+	.searchBar-delIcon::after {
+	    transform: rotate(-45deg);
+	}
+	.searchBar input{
+		display: block;
+		width: 600rpx;
+	    background: #fff;
+		border: 1rpx solid #E6EAF2;
+		border-radius: 30rpx;
+		outline: none;
+		box-sizing: border-box;
+		height: 68rpx;
+		font-size: 14px;
+		padding: 0 60rpx;
+	}
+	.searchBar text {
+		font-size: 30rpx;
+		display: block;
+		height: 68rpx;
+		line-height: 68rpx;
+		text-align: center;
+		flex: 1;
+	}
+	/*热门搜索*/
+	.hotSearch {
+		/* height: calc( 100% - 88rpx ); */
+		padding: 30rpx;
+	}
+	.hotSearch-content-tip {
+		display: inline-block;
+		color: #8891a7;
+		border: 1px solid #E6EAF2;
+		border-radius: 30rpx;
+		line-height: 25rpx;
+		padding: 20rpx 25rpx;
+		margin: 30rpx 25rpx 0 0;
+	}
+	/*搜索联想*/ 
+	.searchAss {
+		padding: 0 30rpx;
+		display: flex;
+		flex-direction: column;
+	}
+	.searchAss-tip {
+		border-bottom: 1px solid #E6EAF2;
+		height: 30rpx;
+		padding: 25rpx 0;
+		color: #3c4a55;
+		width: calc( 100vw - 60rpx );
+		overflow: hidden;
+		text-overflow:ellipsis;
+		white-space: nowrap;
+	}
+	/*搜索结果*
+		/* 筛选栏 */
+		.conditionBar {
+			width: 100%;
+			color: #999;
+			background: #fff;
+			border-bottom: 1px solid #E6EAF2;
+			position: relative;
+	
+		}
+		.conditionBar-main {
+			height: 87rpx;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: nowrap;
+		}
+		.conditionBar-sum {
+			margin-left: 30rpx;
+			flex: 1;
+			white-space: nowrap;  
+			text-overflow:ellipsis; 
+			overflow:hidden;
+		}
+		.conditionBar-right,
+		.conditionBar-right-select {
+			margin-right:20rpx;
+			display: flex;
+			flex-wrap: nowrap;
+		}
+		.conditionBar-right-select {
+			margin: 0;
+			padding: 0 15rpx;
+			line-height: 30rpx;
+		}
+		.conditionBar-right-select:first-child {
+			border-right: 1px solid #D3D8E6;
+		}
+	/*结果*/
+	.searchResult-result {
+		position: relative;
+	}
+	.item-up,
+	.item-down,
+	.item-vip{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items: center;
+		color: #999;
+		font-size: 12px;
+	}
+	.item-up-u {
+		margin-top: 4rpx;
+	}
+	.item-up-s {
+		padding: 0 20rpx 0 10rpx;
+	}
+	/* .item-up-l{
+		
+	} */
+	.item-down-n {
+		color: #333;
+		font-size: 15px;
+	}
+	.item-down-o {
+		padding-left: 20rpx;
+		text-decoration:line-through;
+	}
+	.item-vip-icon {
+		width: 110rpx;
+		height: 34rpx;
+		line-height: 30rpx;
+		font-size: 12px;
+		color: #fff;
+		background: #FF2D3D;
+		background-image: linear-gradient(78deg, #FF2D3D 0%, #FF7544 96%);
+		margin-right: 10rpx;
+		text-align: center;
+		border-radius: 5rpx;
+		padding-top: 5rpx;
+		box-sizing: border-box;
+	}
+	.item-vip {
+		color: #FF2D3D;
+		font-size: 15px;
+	}
+	

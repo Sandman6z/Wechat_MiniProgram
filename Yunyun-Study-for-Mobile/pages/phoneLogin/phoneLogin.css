@@ -1,0 +1,89 @@
+/* #ifdef H5 */
+.page {
+	overflow: hidden;
+}
+/* #endif */
+.login-form {
+	margin: 0 40rpx;
+	display: flex;
+	flex-direction: column;
+}
+.chooseBtn {
+	padding: 0 0 0 50rpx;
+	height: 32rpx;
+    line-height: 32rpx;
+	font-size: 12px;
+	color: #666;
+	margin: 20rpx 0;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+}
+.right {
+	float: right;
+}
+.chooseBtn-icon {
+	margin: 4rpx 8rpx 0 0;
+}
+.inputoutside {
+	margin-top: 60rpx;
+}
+.startBtn {
+	width: 100%;
+	height: 88rpx;
+	background: #2CC17B;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #FFF;
+	font-size: 18px;
+	line-height: 88rpx;
+	letter-spacing: 5px;
+	border-radius: 2px;
+}
+.unloginBtn {
+	padding: 20rpx 0;
+	font-size: calc( 12px / 0.7 );
+	margin-left: -15%; 
+	color: #999;
+	height: 32rpx;
+	width: calc(100vw - 80rpx);
+}
+/* >>> .uni-checkbox-input {
+	width: 28rpx;
+	height: 28rpx;
+} */
+.checkbox-first {
+	padding-right: 20rpx;
+	border-right: 2px solid  #ccc;
+	margin-right: 20rpx;
+	white-space: nowrap;
+}
+.tipBox {
+	font-size: 12px;
+	color: #fa6060;
+	margin: 20rpx 0;
+}
+.tipBox-text {
+	margin-left: 10rpx;
+}
+.getsmscode {
+	float: right;
+	width: 35%;
+	height: 88rpx;
+	background: #fff;
+	border: 1px solid #2CC17B;
+	display: inline-block;
+	color: #2CC17B;
+	font-size: 14px;
+	line-height: 88rpx;
+	border-radius: 2px;
+	text-align: center;
+}
+.getsmscode-hover {
+	background: #ade1f5
+}
+.getsmscode-disable {
+	border: 1px solid #c5cddb;
+	color: #C5CDDB;
+}
